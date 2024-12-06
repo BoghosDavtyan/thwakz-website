@@ -1,0 +1,36 @@
+:root {
+    /* Home Page */
+    --home-background-color: #ffffff;
+    --home-header-background: #0078d4;
+    --home-sidebar-color: #004a8d;
+    --home-footer-background: #003366;
+
+    /* Home Page Images */
+    --home-slider-image-1: url('assets/images/image1.jpg');
+    --home-slider-image-2: url('assets/images/image2.jpg');
+    --home-slider-image-3: url('assets/images/image3.jpg');
+    
+    /* Prigat Page */
+    --prigat-background-color: #f0f0f0;
+    --prigat-header-background: #ff6600;
+    --prigat-sidebar-color: #cc5200;
+    --prigat-footer-background: #a34500;
+
+    /* AI Department Page */
+    --ai-background-color: #e8f0fe;
+    --ai-header-background: #00ccff;
+    --ai-sidebar-color: #0099cc;
+    --ai-footer-background: #006699;
+
+    /* Contact Page */
+    --contact-background-color: #ffffff;
+    --contact-header-background: #e74c3c;
+    --contact-sidebar-color: #c0392b;
+    --contact-footer-background: #a93226;
+
+    /* About Page */
+    --about-background-color: #f8f8f8;
+    --about-header-background: #9b59b6;
+    --about-sidebar-color: #8e44ad;
+    --about-footer-background: #7d3c98;
+}

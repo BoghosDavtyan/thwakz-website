@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/config.css">
+    <title>About Us</title>
+    <style>
+        body {
+            background-color: var(--about-background-color);
+        }
+        header {
+            background-color: var(--about-header-background);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        #sidebar {
+            background-color: var(--about-sidebar-color);
+            transition: transform 0.3s ease;
+            transform: translateX(-100%);
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 250px;
+            z-index: 1000;
+        }
+        #sidebar.active {
+            transform: translateX(0);
+        }
+        footer {
+            background-color: var(--about-footer-background);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="header-title">About Us</h1>
+        <button id="toggleSidebar">☰</button>
+    </header>
+
+    <nav id="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="prigat.html">Prigat Productions</a></li>
+            <li><a href="ai-department.html">AI Department</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="team">
+            <h2>Meet Our Team</h2>
+            <p>Information about our team members.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Thwakz. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

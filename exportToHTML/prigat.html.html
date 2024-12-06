@@ -1,0 +1,381 @@
+<html>
+<head>
+<title>prigat.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #e8bf6a;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #bababa;}
+.s3 { color: #a5c261;}
+.s4 { color: #808080;}
+.s5 { color: #6a8759;}
+.s6 { color: #cc7832;}
+.s7 { color: #6897bb;}
+.s8 { color: #cc7832; font-weight: bold;}
+.s9 { color: #6d9cbe;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+prigat.html</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;!DOCTYPE </span><span class="s2">html</span><span class="s0">&gt;</span>
+<span class="s0">&lt;html </span><span class="s2">lang</span><span class="s3">=&quot;en&quot;</span><span class="s0">&gt;</span>
+<span class="s0">&lt;head&gt;</span>
+    <span class="s0">&lt;meta </span><span class="s2">charset</span><span class="s3">=&quot;UTF-8&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;meta </span><span class="s2">name</span><span class="s3">=&quot;viewport&quot; </span><span class="s2">content</span><span class="s3">=&quot;width=device-width, initial-scale=1.0&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;title&gt;</span><span class="s1">Prigat LLC - Official Website</span><span class="s0">&lt;/title&gt;</span>
+    <span class="s0">&lt;link </span><span class="s2">rel</span><span class="s3">=&quot;stylesheet&quot; </span><span class="s2">href</span><span class="s3">=&quot;https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;style&gt;</span>
+        <span class="s4">/* Global Styles */</span>
+        <span class="s0">body </span><span class="s1">{</span>
+            <span class="s2">font-family</span><span class="s1">: </span><span class="s5">'Arial'</span><span class="s6">, </span><span class="s3">sans-serif</span><span class="s6">;</span>
+            <span class="s2">background-color</span><span class="s1">: </span><span class="s7">#111</span><span class="s6">;</span>
+            <span class="s2">color</span><span class="s1">: </span><span class="s7">#fff</span><span class="s6">;</span>
+            <span class="s2">line-height</span><span class="s1">: </span><span class="s7">1.8</span><span class="s6">;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">.</span><span class="s0">navbar </span><span class="s1">{</span>
+            <span class="s2">background-color</span><span class="s1">: </span><span class="s7">#222</span><span class="s6">;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">.</span><span class="s0">navbar-brand </span><span class="s1">{</span>
+            <span class="s2">font-weight</span><span class="s1">: </span><span class="s3">bold</span><span class="s6">;</span>
+            <span class="s2">font-size</span><span class="s1">: </span><span class="s7">1.5</span><span class="s3">rem</span><span class="s6">;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">.</span><span class="s0">nav-link </span><span class="s1">{</span>
+            <span class="s2">color</span><span class="s1">: </span><span class="s7">#fff </span><span class="s8">!important</span><span class="s6">;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">.</span><span class="s0">carousel-item img </span><span class="s1">{</span>
+            <span class="s2">height</span><span class="s1">: </span><span class="s7">75</span><span class="s3">vh</span><span class="s6">;</span>
+            <span class="s2">object-fit</span><span class="s1">: </span><span class="s3">cover</span><span class="s6">;</span>
+            <span class="s2">width</span><span class="s1">: </span><span class="s7">100</span><span class="s1">%</span><span class="s6">;</span>
+        <span class="s1">}</span>
+
+        <span class="s0">section </span><span class="s1">{</span>
+            <span class="s2">padding</span><span class="s1">: </span><span class="s7">4</span><span class="s3">rem </span><span class="s7">2</span><span class="s3">rem</span><span class="s6">;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">.</span><span class="s0">section-title </span><span class="s1">{</span>
+            <span class="s2">margin-bottom</span><span class="s1">: </span><span class="s7">2</span><span class="s3">rem</span><span class="s6">;</span>
+            <span class="s2">font-size</span><span class="s1">: </span><span class="s7">2.5</span><span class="s3">rem</span><span class="s6">;</span>
+            <span class="s2">font-weight</span><span class="s1">: </span><span class="s3">bold</span><span class="s6">;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">.</span><span class="s0">dark-section </span><span class="s1">{</span>
+            <span class="s2">background-color</span><span class="s1">: </span><span class="s7">#222</span><span class="s6">;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">.</span><span class="s0">movie-card </span><span class="s1">{</span>
+            <span class="s2">background-color</span><span class="s1">: </span><span class="s7">#333</span><span class="s6">;</span>
+            <span class="s2">border-radius</span><span class="s1">: </span><span class="s7">8</span><span class="s3">px</span><span class="s6">;</span>
+            <span class="s2">padding</span><span class="s1">: </span><span class="s7">1.5</span><span class="s3">rem</span><span class="s6">;</span>
+            <span class="s2">text-align</span><span class="s1">: </span><span class="s3">center</span><span class="s6">;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">.</span><span class="s0">movie-card img </span><span class="s1">{</span>
+            <span class="s2">border-radius</span><span class="s1">: </span><span class="s7">8</span><span class="s3">px</span><span class="s6">;</span>
+            <span class="s2">width</span><span class="s1">: </span><span class="s7">100</span><span class="s1">%</span><span class="s6">;</span>
+            <span class="s2">height</span><span class="s1">: </span><span class="s3">auto</span><span class="s6">;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">.</span><span class="s0">testimonial </span><span class="s1">{</span>
+            <span class="s2">background-color</span><span class="s1">: </span><span class="s7">#444</span><span class="s6">;</span>
+            <span class="s2">padding</span><span class="s1">: </span><span class="s7">1.5</span><span class="s3">rem</span><span class="s6">;</span>
+            <span class="s2">margin</span><span class="s1">: </span><span class="s7">1</span><span class="s3">rem </span><span class="s7">0</span><span class="s6">;</span>
+            <span class="s2">border-radius</span><span class="s1">: </span><span class="s7">8</span><span class="s3">px</span><span class="s6">;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">.</span><span class="s0">contact </span><span class="s1">.</span><span class="s0">form-control </span><span class="s1">{</span>
+            <span class="s2">margin-bottom</span><span class="s1">: </span><span class="s7">1</span><span class="s3">rem</span><span class="s6">;</span>
+            <span class="s2">border</span><span class="s1">: </span><span class="s3">none</span><span class="s6">;</span>
+            <span class="s2">background-color</span><span class="s1">: </span><span class="s7">#444</span><span class="s6">;</span>
+            <span class="s2">color</span><span class="s1">: </span><span class="s7">#fff</span><span class="s6">;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">.</span><span class="s0">contact </span><span class="s1">.</span><span class="s0">btn-submit </span><span class="s1">{</span>
+            <span class="s2">background-color</span><span class="s1">: </span><span class="s7">#e74c3c</span><span class="s6">;</span>
+            <span class="s2">border</span><span class="s1">: </span><span class="s3">none</span><span class="s6">;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">.</span><span class="s0">footer </span><span class="s1">{</span>
+            <span class="s2">padding</span><span class="s1">: </span><span class="s7">1.5</span><span class="s3">rem</span><span class="s6">;</span>
+            <span class="s2">text-align</span><span class="s1">: </span><span class="s3">center</span><span class="s6">;</span>
+            <span class="s2">background-color</span><span class="s1">: </span><span class="s7">#222</span><span class="s6">;</span>
+            <span class="s2">color</span><span class="s1">: </span><span class="s7">#ccc</span><span class="s6">;</span>
+        <span class="s1">}</span>
+    <span class="s0">&lt;/style&gt;</span>
+<span class="s0">&lt;/head&gt;</span>
+<span class="s0">&lt;body&gt;</span>
+<span class="s4">&lt;!-- Navbar --&gt;</span>
+<span class="s0">&lt;nav </span><span class="s2">class</span><span class="s3">=&quot;navbar navbar-expand-lg navbar-dark&quot; </span><span class="s2">style</span><span class="s3">=&quot;</span><span class="s2">position</span><span class="s1">: </span><span class="s3">sticky</span><span class="s6">; </span><span class="s2">top</span><span class="s1">: </span><span class="s7">0</span><span class="s6">; </span><span class="s2">z-index</span><span class="s1">: </span><span class="s7">1020</span><span class="s6">;</span><span class="s3">&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;container&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;a </span><span class="s2">class</span><span class="s3">=&quot;navbar-brand&quot; </span><span class="s2">href</span><span class="s3">=&quot;#&quot;</span><span class="s0">&gt;</span><span class="s1">Prigat LLC</span><span class="s0">&lt;/a&gt;</span>
+        <span class="s0">&lt;button </span><span class="s2">class</span><span class="s3">=&quot;navbar-toggler&quot; </span><span class="s2">type</span><span class="s3">=&quot;button&quot; </span><span class="s2">data-bs-toggle</span><span class="s3">=&quot;collapse&quot; </span><span class="s2">data-bs-target</span><span class="s3">=&quot;#navbarNav&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;navbar-toggler-icon&quot;</span><span class="s0">&gt;&lt;/span&gt;</span>
+        <span class="s0">&lt;/button&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;collapse navbar-collapse&quot; </span><span class="s2">id</span><span class="s3">=&quot;navbarNav&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;ul </span><span class="s2">class</span><span class="s3">=&quot;navbar-nav ms-auto&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;li </span><span class="s2">class</span><span class="s3">=&quot;nav-item&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">class</span><span class="s3">=&quot;nav-link&quot; </span><span class="s2">href</span><span class="s3">=&quot;index.html&quot;</span><span class="s0">&gt;</span><span class="s1">Thwakz</span><span class="s0">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="s0">&lt;li </span><span class="s2">class</span><span class="s3">=&quot;nav-item&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">class</span><span class="s3">=&quot;nav-link&quot; </span><span class="s2">href</span><span class="s3">=&quot;#about&quot;</span><span class="s0">&gt;</span><span class="s1">About</span><span class="s0">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="s0">&lt;li </span><span class="s2">class</span><span class="s3">=&quot;nav-item&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">class</span><span class="s3">=&quot;nav-link&quot; </span><span class="s2">href</span><span class="s3">=&quot;#movies&quot;</span><span class="s0">&gt;</span><span class="s1">Movies</span><span class="s0">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="s0">&lt;li </span><span class="s2">class</span><span class="s3">=&quot;nav-item&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">class</span><span class="s3">=&quot;nav-link&quot; </span><span class="s2">href</span><span class="s3">=&quot;#bts&quot;</span><span class="s0">&gt;</span><span class="s1">Behind the Scenes</span><span class="s0">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="s0">&lt;li </span><span class="s2">class</span><span class="s3">=&quot;nav-item&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">class</span><span class="s3">=&quot;nav-link&quot; </span><span class="s2">href</span><span class="s3">=&quot;#testimonials&quot;</span><span class="s0">&gt;</span><span class="s1">Testimonials</span><span class="s0">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="s0">&lt;li </span><span class="s2">class</span><span class="s3">=&quot;nav-item&quot;</span><span class="s0">&gt;&lt;a </span><span class="s2">class</span><span class="s3">=&quot;nav-link&quot; </span><span class="s2">href</span><span class="s3">=&quot;#contact&quot;</span><span class="s0">&gt;</span><span class="s1">Contact Us</span><span class="s0">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="s0">&lt;/ul&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+    <span class="s0">&lt;/div&gt;</span>
+<span class="s0">&lt;/nav&gt;</span>
+<span class="s4">&lt;!-- Image Carousel --&gt;</span>
+<span class="s0">&lt;div </span><span class="s2">id</span><span class="s3">=&quot;carouselExampleIndicators&quot; </span><span class="s2">class</span><span class="s3">=&quot;carousel slide&quot; </span><span class="s2">data-bs-ride</span><span class="s3">=&quot;carousel&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;carousel-indicators&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;button </span><span class="s2">type</span><span class="s3">=&quot;button&quot; </span><span class="s2">data-bs-target</span><span class="s3">=&quot;#carouselExampleIndicators&quot; </span><span class="s2">data-bs-slide-to</span><span class="s3">=&quot;0&quot; </span><span class="s2">class</span><span class="s3">=&quot;active&quot; </span><span class="s2">aria-current</span><span class="s3">=&quot;true&quot;</span><span class="s0">&gt;&lt;/button&gt;</span>
+        <span class="s0">&lt;button </span><span class="s2">type</span><span class="s3">=&quot;button&quot; </span><span class="s2">data-bs-target</span><span class="s3">=&quot;#carouselExampleIndicators&quot; </span><span class="s2">data-bs-slide-to</span><span class="s3">=&quot;1&quot;</span><span class="s0">&gt;&lt;/button&gt;</span>
+        <span class="s0">&lt;button </span><span class="s2">type</span><span class="s3">=&quot;button&quot; </span><span class="s2">data-bs-target</span><span class="s3">=&quot;#carouselExampleIndicators&quot; </span><span class="s2">data-bs-slide-to</span><span class="s3">=&quot;2&quot;</span><span class="s0">&gt;&lt;/button&gt;</span>
+    <span class="s0">&lt;/div&gt;</span>
+    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;carousel-inner&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;carousel-item active&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;img </span><span class="s2">src</span><span class="s3">=&quot;https://via.placeholder.com/1500x800&quot; </span><span class="s2">alt</span><span class="s3">=&quot;Img1&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;carousel-item&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;img </span><span class="s2">src</span><span class="s3">=&quot;Images/Studio.png&quot; </span><span class="s2">alt</span><span class="s3">=&quot;The Studio&quot;</span><span class="s0">&gt;</span><span class="s1">/&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;carousel-item&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;img </span><span class="s2">src</span><span class="s3">=&quot;https://via.placeholder.com/1500x800&quot; </span><span class="s2">alt</span><span class="s3">=&quot;Img3&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+    <span class="s0">&lt;/div&gt;</span>
+    <span class="s0">&lt;button </span><span class="s2">class</span><span class="s3">=&quot;carousel-control-prev&quot; </span><span class="s2">type</span><span class="s3">=&quot;button&quot; </span><span class="s2">data-bs-target</span><span class="s3">=&quot;#carouselExampleIndicators&quot; </span><span class="s2">data-bs-slide</span><span class="s3">=&quot;prev&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;carousel-control-prev-icon&quot; </span><span class="s2">aria-hidden</span><span class="s3">=&quot;true&quot;</span><span class="s0">&gt;&lt;/span&gt;</span>
+        <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;visually-hidden&quot;</span><span class="s0">&gt;</span><span class="s1">Previous</span><span class="s0">&lt;/span&gt;</span>
+    <span class="s0">&lt;/button&gt;</span>
+    <span class="s0">&lt;button </span><span class="s2">class</span><span class="s3">=&quot;carousel-control-next&quot; </span><span class="s2">type</span><span class="s3">=&quot;button&quot; </span><span class="s2">data-bs-target</span><span class="s3">=&quot;#carouselExampleIndicators&quot; </span><span class="s2">data-bs-slide</span><span class="s3">=&quot;next&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;carousel-control-next-icon&quot; </span><span class="s2">aria-hidden</span><span class="s3">=&quot;true&quot;</span><span class="s0">&gt;&lt;/span&gt;</span>
+        <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;visually-hidden&quot;</span><span class="s0">&gt;</span><span class="s1">Next</span><span class="s0">&lt;/span&gt;</span>
+    <span class="s0">&lt;/button&gt;</span>
+<span class="s0">&lt;/div&gt;</span>
+
+<span class="s4">&lt;!-- About Section --&gt;</span>
+<span class="s0">&lt;section </span><span class="s2">id</span><span class="s3">=&quot;about&quot; </span><span class="s2">class</span><span class="s3">=&quot;dark-section&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;container text-center&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;h2 </span><span class="s2">class</span><span class="s3">=&quot;section-title&quot;</span><span class="s0">&gt;</span><span class="s1">About Us</span><span class="s0">&lt;/h2&gt;</span>
+        <span class="s0">&lt;p&gt;</span>
+            <span class="s1">Prigat LLC has been at the forefront of cinematic storytelling for decades.</span>
+            <span class="s1">With a legacy that includes over 50 feature films, we are proud to have shaped</span>
+            <span class="s1">the film industry with our innovative approach to storytelling, breathtaking visuals,</span>
+            <span class="s1">and memorable characters. Known for creating cultural phenomena like Empty Space and</span>
+            <span class="s1">The Godscoter, our studio is synonymous with excellence and passion for filmmaking.</span>
+            <span class="s1">Every film we produce carries our vision of creating unforgettable experiences for audiences worldwide.</span>
+        <span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;img </span><span class="s2">src</span><span class="s3">=&quot;https://via.placeholder.com/1200x600&quot; </span><span class="s2">alt</span><span class="s3">=&quot;Prigat Studio&quot; </span><span class="s2">class</span><span class="s3">=&quot;img-fluid mt-3&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;/div&gt;</span>
+<span class="s0">&lt;/section&gt;</span>
+
+<span class="s4">&lt;!-- Movies Section --&gt;</span>
+<span class="s0">&lt;section </span><span class="s2">id</span><span class="s3">=&quot;movies&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;container&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;h2 </span><span class="s2">class</span><span class="s3">=&quot;section-title text-center&quot;</span><span class="s0">&gt;</span><span class="s1">Our Movies</span><span class="s0">&lt;/h2&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;row g-4&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;col-md-4&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;movie-card&quot;</span><span class="s0">&gt;</span>
+
+
+                    <span class="s0">&lt;img </span><span class="s2">src</span><span class="s3">=&quot;Images/EmptySpace.png&quot; </span><span class="s2">alt</span><span class="s3">=&quot;Empty Space&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;h5 </span><span class="s2">class</span><span class="s3">=&quot;mt-2&quot;</span><span class="s0">&gt;</span><span class="s1">Empty Space</span><span class="s0">&lt;/h5&gt;</span>
+                    <span class="s0">&lt;p&gt;</span>
+                        <span class="s1">A sci-fi epic that redefined the genre. Empty Space explores themes of humanity,</span>
+                        <span class="s1">isolation, and the mysteries of the universe with a gripping storyline and cutting-edge visuals.</span>
+                    <span class="s0">&lt;/p&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;col-md-4&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;movie-card&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;img </span><span class="s2">src</span><span class="s3">=&quot;Images/TheGodScooter.png&quot; </span><span class="s2">alt</span><span class="s3">=&quot;The Godscoter&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;h5 </span><span class="s2">class</span><span class="s3">=&quot;mt-2&quot;</span><span class="s0">&gt;</span><span class="s1">The Godscoter</span><span class="s0">&lt;/h5&gt;</span>
+                    <span class="s0">&lt;p&gt;</span>
+                        <span class="s1">A thrilling narrative of betrayal, loyalty, and power, The Godscoter</span>
+                        <span class="s1">is a cinematic masterpiece that resonates with audiences across generations.</span>
+                    <span class="s0">&lt;/p&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;col-md-4&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;movie-card&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;img </span><span class="s2">src</span><span class="s3">=&quot;Images/Upcoming.png&quot; </span><span class="s2">alt</span><span class="s3">=&quot;Upcoming Film&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;h5 </span><span class="s2">class</span><span class="s3">=&quot;mt-2&quot;</span><span class="s0">&gt;</span><span class="s1">Upcoming Film</span><span class="s0">&lt;/h5&gt;</span>
+                    <span class="s0">&lt;p&gt;</span>
+                        <span class="s1">Our latest project is a blend of innovation and creativity, designed to push</span>
+                        <span class="s1">the boundaries of storytelling and redefine what audiences can expect from cinema.</span>
+                    <span class="s0">&lt;/p&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+    <span class="s0">&lt;/div&gt;</span>
+<span class="s0">&lt;/section&gt;</span>
+<span class="s4">&lt;!-- Behind the Scenes Section --&gt;</span>
+<span class="s0">&lt;section </span><span class="s2">id</span><span class="s3">=&quot;bts&quot; </span><span class="s2">class</span><span class="s3">=&quot;dark-section&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;container&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;h2 </span><span class="s2">class</span><span class="s3">=&quot;section-title text-center&quot;</span><span class="s0">&gt;</span><span class="s1">Behind the Scenes</span><span class="s0">&lt;/h2&gt;</span>
+        <span class="s0">&lt;p&gt;</span><span class="s1">Take a look behind the curtain of our filmmaking process, from pre-production to post-production.</span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;img </span><span class="s2">src</span><span class="s3">=&quot;https://via.placeholder.com/1200x600&quot; </span><span class="s2">alt</span><span class="s3">=&quot;Behind the Scenes&quot; </span><span class="s2">class</span><span class="s3">=&quot;img-fluid&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;/div&gt;</span>
+<span class="s0">&lt;/section&gt;</span>
+<span class="s4">&lt;!-- Testimonials Section --&gt;</span>
+<span class="s0">&lt;section </span><span class="s2">id</span><span class="s3">=&quot;testimonials&quot; </span><span class="s2">class</span><span class="s3">=&quot;dark-section&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;container&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;h2 </span><span class="s2">class</span><span class="s3">=&quot;section-title text-center&quot;</span><span class="s0">&gt;</span><span class="s1">What Industry Legends Say</span><span class="s0">&lt;/h2&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;testimonial&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;p&gt;</span>
+                <span class="s1">&quot;Prigat LLC is a powerhouse of storytelling. Their dedication to craft and</span>
+                <span class="s1">their ability to push the boundaries of cinema are unmatched. Every project they touch</span>
+                <span class="s1">turns into pure magic.&quot;</span>
+            <span class="s0">&lt;/p&gt;</span>
+            <span class="s0">&lt;h6&gt;</span><span class="s1">- Famous Director #1</span><span class="s0">&lt;/h6&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;testimonial&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;p&gt;</span>
+                <span class="s1">&quot;Working with Prigat LLC has been a dream come true. They don't just make movies;</span>
+                <span class="s1">they create experiences that last a lifetime.&quot;</span>
+            <span class="s0">&lt;/p&gt;</span>
+            <span class="s0">&lt;h6&gt;</span><span class="s1">- Famous Director #2</span><span class="s0">&lt;/h6&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+    <span class="s0">&lt;/div&gt;</span>
+<span class="s0">&lt;/section&gt;</span>
+
+<span class="s4">&lt;!-- Footer --&gt;</span>
+<span class="s0">&lt;footer </span><span class="s2">class</span><span class="s3">=&quot;footer&quot;</span><span class="s0">&gt;&lt;!DOCTYPE </span><span class="s2">html</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;html </span><span class="s2">lang</span><span class="s3">=&quot;en&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;head&gt;</span>
+        <span class="s0">&lt;meta </span><span class="s2">charset</span><span class="s3">=&quot;UTF-8&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;meta </span><span class="s2">name</span><span class="s3">=&quot;viewport&quot; </span><span class="s2">content</span><span class="s3">=&quot;width=device-width, initial-scale=1.0&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;title&gt;</span><span class="s1">Prigat LLC - Official Website</span><span class="s0">&lt;/title&gt;</span>
+        <span class="s0">&lt;link </span><span class="s2">rel</span><span class="s3">=&quot;stylesheet&quot; </span><span class="s2">href</span><span class="s3">=&quot;https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;style&gt;</span>
+            <span class="s4">/* Global Styles */</span>
+            <span class="s0">body </span><span class="s1">{</span>
+                <span class="s2">font-family</span><span class="s1">: </span><span class="s5">'Arial'</span><span class="s6">, </span><span class="s3">sans-serif</span><span class="s6">;</span>
+                <span class="s2">background-color</span><span class="s1">: </span><span class="s7">#111</span><span class="s6">;</span>
+                <span class="s2">color</span><span class="s1">: </span><span class="s7">#fff</span><span class="s6">;</span>
+                <span class="s2">line-height</span><span class="s1">: </span><span class="s7">1.6</span><span class="s6">;</span>
+            <span class="s1">}</span>
+
+            <span class="s1">.</span><span class="s0">navbar </span><span class="s1">{</span>
+                <span class="s2">background-color</span><span class="s1">: </span><span class="s7">#222</span><span class="s6">;</span>
+            <span class="s1">}</span>
+
+            <span class="s1">.</span><span class="s0">navbar-brand </span><span class="s1">{</span>
+                <span class="s2">font-weight</span><span class="s1">: </span><span class="s3">bold</span><span class="s6">;</span>
+                <span class="s2">font-size</span><span class="s1">: </span><span class="s7">1.5</span><span class="s3">rem</span><span class="s6">;</span>
+            <span class="s1">}</span>
+
+            <span class="s1">.</span><span class="s0">nav-link </span><span class="s1">{</span>
+                <span class="s2">color</span><span class="s1">: </span><span class="s7">#fff </span><span class="s8">!important</span><span class="s6">;</span>
+            <span class="s1">}</span>
+
+            <span class="s1">.</span><span class="s0">carousel-item img </span><span class="s1">{</span>
+                <span class="s2">height</span><span class="s1">: </span><span class="s7">75</span><span class="s3">vh</span><span class="s6">;</span>
+                <span class="s2">object-fit</span><span class="s1">: </span><span class="s3">cover</span><span class="s6">;</span>
+                <span class="s2">width</span><span class="s1">: </span><span class="s7">100</span><span class="s1">%</span><span class="s6">;</span>
+            <span class="s1">}</span>
+
+            <span class="s0">section </span><span class="s1">{</span>
+                <span class="s2">padding</span><span class="s1">: </span><span class="s7">4</span><span class="s3">rem </span><span class="s7">2</span><span class="s3">rem</span><span class="s6">;</span>
+            <span class="s1">}</span>
+
+            <span class="s1">.</span><span class="s0">section-title </span><span class="s1">{</span>
+                <span class="s2">margin-bottom</span><span class="s1">: </span><span class="s7">2</span><span class="s3">rem</span><span class="s6">;</span>
+                <span class="s2">font-size</span><span class="s1">: </span><span class="s7">2</span><span class="s3">rem</span><span class="s6">;</span>
+                <span class="s2">font-weight</span><span class="s1">: </span><span class="s3">bold</span><span class="s6">;</span>
+            <span class="s1">}</span>
+
+            <span class="s1">.</span><span class="s0">dark-section </span><span class="s1">{</span>
+                <span class="s2">background-color</span><span class="s1">: </span><span class="s7">#222</span><span class="s6">;</span>
+            <span class="s1">}</span>
+
+            <span class="s1">.</span><span class="s0">movie-card </span><span class="s1">{</span>
+                <span class="s2">background-color</span><span class="s1">: </span><span class="s7">#333</span><span class="s6">;</span>
+                <span class="s2">border-radius</span><span class="s1">: </span><span class="s7">8</span><span class="s3">px</span><span class="s6">;</span>
+                <span class="s2">padding</span><span class="s1">: </span><span class="s7">1</span><span class="s3">rem</span><span class="s6">;</span>
+                <span class="s2">text-align</span><span class="s1">: </span><span class="s3">center</span><span class="s6">;</span>
+            <span class="s1">}</span>
+
+            <span class="s1">.</span><span class="s0">movie-card img </span><span class="s1">{</span>
+                <span class="s2">border-radius</span><span class="s1">: </span><span class="s7">8</span><span class="s3">px</span><span class="s6">;</span>
+                <span class="s2">width</span><span class="s1">: </span><span class="s7">100</span><span class="s1">%</span><span class="s6">;</span>
+                <span class="s2">height</span><span class="s1">: </span><span class="s3">auto</span><span class="s6">;</span>
+            <span class="s1">}</span>
+
+            <span class="s1">.</span><span class="s0">contact </span><span class="s1">.</span><span class="s0">form-control </span><span class="s1">{</span>
+                <span class="s2">margin-bottom</span><span class="s1">: </span><span class="s7">1</span><span class="s3">rem</span><span class="s6">;</span>
+                <span class="s2">border</span><span class="s1">: </span><span class="s3">none</span><span class="s6">;</span>
+                <span class="s2">background-color</span><span class="s1">: </span><span class="s7">#444</span><span class="s6">;</span>
+                <span class="s2">color</span><span class="s1">: </span><span class="s7">#fff</span><span class="s6">;</span>
+            <span class="s1">}</span>
+
+            <span class="s1">.</span><span class="s0">contact </span><span class="s1">.</span><span class="s0">btn-submit </span><span class="s1">{</span>
+                <span class="s2">background-color</span><span class="s1">: </span><span class="s7">#e74c3c</span><span class="s6">;</span>
+                <span class="s2">border</span><span class="s1">: </span><span class="s3">none</span><span class="s6">;</span>
+            <span class="s1">}</span>
+
+            <span class="s1">.</span><span class="s0">footer </span><span class="s1">{</span>
+                <span class="s2">padding</span><span class="s1">: </span><span class="s7">1.5</span><span class="s3">rem</span><span class="s6">;</span>
+                <span class="s2">text-align</span><span class="s1">: </span><span class="s3">center</span><span class="s6">;</span>
+                <span class="s2">background-color</span><span class="s1">: </span><span class="s7">#222</span><span class="s6">;</span>
+                <span class="s2">color</span><span class="s1">: </span><span class="s7">#ccc</span><span class="s6">;</span>
+            <span class="s1">}</span>
+        <span class="s0">&lt;/style&gt;</span>
+    <span class="s0">&lt;/head&gt;</span>
+
+    <span class="s4">&lt;!-- Vision Section --&gt;</span>
+    <span class="s0">&lt;section </span><span class="s2">id</span><span class="s3">=&quot;vision&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;container&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;h2 </span><span class="s2">class</span><span class="s3">=&quot;section-title text-center&quot;</span><span class="s0">&gt;</span><span class="s1">Our Vision</span><span class="s0">&lt;/h2&gt;</span>
+            <span class="s0">&lt;p&gt;</span><span class="s1">We strive to redefine the world of cinema by creating experiences that inspire, entertain, and ignite the imagination of audiences globally.</span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+    <span class="s0">&lt;/section&gt;</span>
+
+    <span class="s4">&lt;!-- Awards Section --&gt;</span>
+    <span class="s0">&lt;section </span><span class="s2">id</span><span class="s3">=&quot;awards&quot; </span><span class="s2">class</span><span class="s3">=&quot;dark-section&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;container text-center&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;h2 </span><span class="s2">class</span><span class="s3">=&quot;section-title&quot;</span><span class="s0">&gt;</span><span class="s1">Awards &amp; Recognitions</span><span class="s0">&lt;/h2&gt;</span>
+            <span class="s0">&lt;p&gt;</span><span class="s1">Prigat LLC has received numerous awards over the years, including international recognition for innovation in storytelling.</span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+    <span class="s0">&lt;/section&gt;</span>
+
+    <span class="s4">&lt;!-- Blog Section --&gt;</span>
+    <span class="s0">&lt;section </span><span class="s2">id</span><span class="s3">=&quot;blog&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;container&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;h2 </span><span class="s2">class</span><span class="s3">=&quot;section-title text-center&quot;</span><span class="s0">&gt;</span><span class="s1">From Our Blog</span><span class="s0">&lt;/h2&gt;</span>
+            <span class="s0">&lt;p&gt;</span><span class="s1">Explore behind-the-scenes stories, interviews with directors, and more exclusive content from our world.</span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+    <span class="s0">&lt;/section&gt;</span>
+
+    <span class="s4">&lt;!-- Contact Section --&gt;</span>
+    <span class="s0">&lt;section </span><span class="s2">id</span><span class="s3">=&quot;contact&quot; </span><span class="s2">class</span><span class="s3">=&quot;contact&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;container text-center&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;h3&gt;</span><span class="s1">Contact Us</span><span class="s0">&lt;/h3&gt;</span>
+            <span class="s0">&lt;form&gt;</span>
+                <span class="s0">&lt;input </span><span class="s2">type</span><span class="s3">=&quot;text&quot; </span><span class="s2">class</span><span class="s3">=&quot;form-control&quot; </span><span class="s2">placeholder</span><span class="s3">=&quot;Your Name&quot; </span><span class="s2">required</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;input </span><span class="s2">type</span><span class="s3">=&quot;email&quot; </span><span class="s2">class</span><span class="s3">=&quot;form-control&quot; </span><span class="s2">placeholder</span><span class="s3">=&quot;Your Email&quot; </span><span class="s2">required</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;textarea </span><span class="s2">class</span><span class="s3">=&quot;form-control&quot; </span><span class="s2">rows</span><span class="s3">=&quot;4&quot; </span><span class="s2">placeholder</span><span class="s3">=&quot;Your Message&quot; </span><span class="s2">required</span><span class="s0">&gt;&lt;/textarea&gt;</span>
+                <span class="s0">&lt;button </span><span class="s2">type</span><span class="s3">=&quot;submit&quot; </span><span class="s2">class</span><span class="s3">=&quot;btn btn-submit mt-3&quot;</span><span class="s0">&gt;</span><span class="s1">Send Message</span><span class="s0">&lt;/button&gt;</span>
+            <span class="s0">&lt;/form&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+    <span class="s0">&lt;/section&gt;</span>
+
+
+    <span class="s0">&lt;script </span><span class="s2">src</span><span class="s3">=&quot;https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js&quot;</span><span class="s0">&gt;&lt;/script&gt;</span>
+<span class="s0">&lt;/body&gt;</span>
+<span class="s0">&lt;/html&gt;</span>
+
+<span class="s0">&lt;p&gt;</span><span class="s9">&amp;copy; </span><span class="s1">2024 Prigat LLC. All rights reserved.</span><span class="s0">&lt;/p&gt;</span>
+<span class="s0">&lt;/footer&gt;</span>
+
+<span class="s0">&lt;script </span><span class="s2">src</span><span class="s3">=&quot;https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js&quot;</span><span class="s0">&gt;&lt;/script&gt;</span>
+<span class="s0">&lt;/body&gt;</span>
+<span class="s0">&lt;/html&gt;</span>
+</pre>
+</body>
+</html>

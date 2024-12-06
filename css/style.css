@@ -1,0 +1,62 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#topbar {
+    background-color: var(--home-header-background);
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+#sidebar {
+    background-color: var(--home-sidebar-color);
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    transition: left 0.3s ease;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#toggleSidebar, #closeSidebar {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.company-section, .reviews-section {
+    background-color: var(--home-background-color);
+    padding: 30px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.review {
+    background-color: #e7f3ff;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: var(--home-footer-background);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

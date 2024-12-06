@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>style.css</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #e8bf6a;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #bababa;}
+.s3 { color: #a9b7c6;}
+.s4 { color: #6a8759;}
+.s5 { color: #cc7832;}
+.s6 { color: #a5c261;}
+.s7 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+style.css</font>
+</center></td></tr></table>
+<pre><span class="s0">body </span><span class="s1">{</span>
+    <span class="s2">font-family</span><span class="s3">: </span><span class="s4">'Roboto'</span><span class="s5">, </span><span class="s6">sans-serif</span><span class="s5">;</span>
+    <span class="s2">margin</span><span class="s3">: </span><span class="s7">0</span><span class="s5">;</span>
+    <span class="s2">padding</span><span class="s3">: </span><span class="s7">0</span><span class="s5">;</span>
+<span class="s1">}</span>
+
+<span class="s0">#topbar </span><span class="s1">{</span>
+    <span class="s2">background-color</span><span class="s3">: </span><span class="s0">var</span><span class="s1">(</span><span class="s0">--home-header-background</span><span class="s1">)</span><span class="s5">;</span>
+    <span class="s2">color</span><span class="s3">: </span><span class="s6">white</span><span class="s5">;</span>
+    <span class="s2">padding</span><span class="s3">: </span><span class="s7">15</span><span class="s6">px</span><span class="s5">;</span>
+    <span class="s2">display</span><span class="s3">: </span><span class="s6">flex</span><span class="s5">;</span>
+    <span class="s2">justify-content</span><span class="s3">: </span><span class="s6">space-between</span><span class="s5">;</span>
+    <span class="s2">align-items</span><span class="s3">: </span><span class="s6">center</span><span class="s5">;</span>
+    <span class="s2">font-size</span><span class="s3">: </span><span class="s7">1.2</span><span class="s6">em</span><span class="s5">;</span>
+<span class="s1">}</span>
+
+<span class="s0">#sidebar </span><span class="s1">{</span>
+    <span class="s2">background-color</span><span class="s3">: </span><span class="s0">var</span><span class="s1">(</span><span class="s0">--home-sidebar-color</span><span class="s1">)</span><span class="s5">;</span>
+    <span class="s2">position</span><span class="s3">: </span><span class="s6">fixed</span><span class="s5">;</span>
+    <span class="s2">top</span><span class="s3">: </span><span class="s7">0</span><span class="s5">;</span>
+    <span class="s2">left</span><span class="s3">: </span><span class="s1">-</span><span class="s7">250</span><span class="s6">px</span><span class="s5">;</span>
+    <span class="s2">width</span><span class="s3">: </span><span class="s7">250</span><span class="s6">px</span><span class="s5">;</span>
+    <span class="s2">height</span><span class="s3">: </span><span class="s7">100</span><span class="s1">%</span><span class="s5">;</span>
+    <span class="s2">transition</span><span class="s3">: </span><span class="s6">left </span><span class="s7">0.3</span><span class="s6">s ease</span><span class="s5">;</span>
+    <span class="s2">padding</span><span class="s3">: </span><span class="s7">20</span><span class="s6">px</span><span class="s5">;</span>
+    <span class="s2">font-family</span><span class="s3">: </span><span class="s4">'Roboto'</span><span class="s5">, </span><span class="s6">sans-serif</span><span class="s5">;</span>
+    <span class="s2">color</span><span class="s3">: </span><span class="s6">white</span><span class="s5">;</span>
+<span class="s1">}</span>
+
+<span class="s0">#sidebar</span><span class="s1">.</span><span class="s0">active </span><span class="s1">{</span>
+    <span class="s2">left</span><span class="s3">: </span><span class="s7">0</span><span class="s5">;</span>
+<span class="s1">}</span>
+
+<span class="s0">#toggleSidebar</span><span class="s5">, </span><span class="s0">#closeSidebar </span><span class="s1">{</span>
+    <span class="s2">background</span><span class="s3">: </span><span class="s6">none</span><span class="s5">;</span>
+    <span class="s2">border</span><span class="s3">: </span><span class="s6">none</span><span class="s5">;</span>
+    <span class="s2">color</span><span class="s3">: </span><span class="s6">white</span><span class="s5">;</span>
+    <span class="s2">font-size</span><span class="s3">: </span><span class="s7">1.5</span><span class="s6">em</span><span class="s5">;</span>
+    <span class="s2">cursor</span><span class="s3">: </span><span class="s6">pointer</span><span class="s5">;</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s0">company-section</span><span class="s5">, </span><span class="s1">.</span><span class="s0">reviews-section </span><span class="s1">{</span>
+    <span class="s2">background-color</span><span class="s3">: </span><span class="s0">var</span><span class="s1">(</span><span class="s0">--home-background-color</span><span class="s1">)</span><span class="s5">;</span>
+    <span class="s2">padding</span><span class="s3">: </span><span class="s7">30</span><span class="s6">px</span><span class="s5">;</span>
+    <span class="s2">margin</span><span class="s3">: </span><span class="s7">20</span><span class="s6">px</span><span class="s5">;</span>
+    <span class="s2">box-shadow</span><span class="s3">: </span><span class="s7">0 4</span><span class="s6">px </span><span class="s7">8</span><span class="s6">px </span><span class="s0">rgba</span><span class="s1">(</span><span class="s7">0</span><span class="s5">, </span><span class="s7">0</span><span class="s5">, </span><span class="s7">0</span><span class="s5">, </span><span class="s7">0.1</span><span class="s1">)</span><span class="s5">;</span>
+    <span class="s2">border-radius</span><span class="s3">: </span><span class="s7">8</span><span class="s6">px</span><span class="s5">;</span>
+<span class="s1">}</span>
+
+<span class="s1">.</span><span class="s0">review </span><span class="s1">{</span>
+    <span class="s2">background-color</span><span class="s3">: </span><span class="s7">#e7f3ff</span><span class="s5">;</span>
+    <span class="s2">padding</span><span class="s3">: </span><span class="s7">15</span><span class="s6">px</span><span class="s5">;</span>
+    <span class="s2">border-radius</span><span class="s3">: </span><span class="s7">8</span><span class="s6">px</span><span class="s5">;</span>
+    <span class="s2">margin</span><span class="s3">: </span><span class="s7">10</span><span class="s6">px </span><span class="s7">0</span><span class="s5">;</span>
+<span class="s1">}</span>
+
+<span class="s0">footer </span><span class="s1">{</span>
+    <span class="s2">background-color</span><span class="s3">: </span><span class="s0">var</span><span class="s1">(</span><span class="s0">--home-footer-background</span><span class="s1">)</span><span class="s5">;</span>
+    <span class="s2">color</span><span class="s3">: </span><span class="s6">white</span><span class="s5">;</span>
+    <span class="s2">text-align</span><span class="s3">: </span><span class="s6">center</span><span class="s5">;</span>
+    <span class="s2">padding</span><span class="s3">: </span><span class="s7">20</span><span class="s6">px</span><span class="s5">;</span>
+<span class="s1">}</span>
+</pre>
+</body>
+</html>

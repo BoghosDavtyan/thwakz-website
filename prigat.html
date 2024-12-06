@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prigat LLC - Official Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #111;
+            color: #fff;
+            line-height: 1.8;
+        }
+
+        .navbar {
+            background-color: #222;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .nav-link {
+            color: #fff !important;
+        }
+
+        .carousel-item img {
+            height: 75vh;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        section {
+            padding: 4rem 2rem;
+        }
+
+        .section-title {
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .dark-section {
+            background-color: #222;
+        }
+
+        .movie-card {
+            background-color: #333;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .movie-card img {
+            border-radius: 8px;
+            width: 100%;
+            height: auto;
+        }
+
+        .testimonial {
+            background-color: #444;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+        }
+
+        .contact .form-control {
+            margin-bottom: 1rem;
+            border: none;
+            background-color: #444;
+            color: #fff;
+        }
+
+        .contact .btn-submit {
+            background-color: #e74c3c;
+            border: none;
+        }
+
+        .footer {
+            padding: 1.5rem;
+            text-align: center;
+            background-color: #222;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="position: sticky; top: 0; z-index: 1020;">
+    <div class="container">
+        <a class="navbar-brand" href="#">Prigat LLC</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Thwakz</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#movies">Movies</a></li>
+                <li class="nav-item"><a class="nav-link" href="#bts">Behind the Scenes</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Image Carousel -->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://via.placeholder.com/1500x800" alt="Img1">
+        </div>
+        <div class="carousel-item">
+            <img src="Images/Studio.png" alt="The Studio">/>
+        </div>
+        <div class="carousel-item">
+            <img src="https://via.placeholder.com/1500x800" alt="Img3">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!-- About Section -->
+<section id="about" class="dark-section">
+    <div class="container text-center">
+        <h2 class="section-title">About Us</h2>
+        <p>
+            Prigat LLC has been at the forefront of cinematic storytelling for decades.
+            With a legacy that includes over 50 feature films, we are proud to have shaped
+            the film industry with our innovative approach to storytelling, breathtaking visuals,
+            and memorable characters. Known for creating cultural phenomena like Empty Space and
+            The Godscoter, our studio is synonymous with excellence and passion for filmmaking.
+            Every film we produce carries our vision of creating unforgettable experiences for audiences worldwide.
+        </p>
+        <img src="https://via.placeholder.com/1200x600" alt="Prigat Studio" class="img-fluid mt-3">
+    </div>
+</section>
+
+<!-- Movies Section -->
+<section id="movies">
+    <div class="container">
+        <h2 class="section-title text-center">Our Movies</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="movie-card">
+
+
+                    <img src="Images/EmptySpace.png" alt="Empty Space">
+                    <h5 class="mt-2">Empty Space</h5>
+                    <p>
+                        A sci-fi epic that redefined the genre. Empty Space explores themes of humanity,
+                        isolation, and the mysteries of the universe with a gripping storyline and cutting-edge visuals.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="movie-card">
+                    <img src="Images/TheGodScooter.png" alt="The Godscoter">
+                    <h5 class="mt-2">The Godscoter</h5>
+                    <p>
+                        A thrilling narrative of betrayal, loyalty, and power, The Godscoter
+                        is a cinematic masterpiece that resonates with audiences across generations.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="movie-card">
+                    <img src="Images/Upcoming.png" alt="Upcoming Film">
+                    <h5 class="mt-2">Upcoming Film</h5>
+                    <p>
+                        Our latest project is a blend of innovation and creativity, designed to push
+                        the boundaries of storytelling and redefine what audiences can expect from cinema.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Behind the Scenes Section -->
+<section id="bts" class="dark-section">
+    <div class="container">
+        <h2 class="section-title text-center">Behind the Scenes</h2>
+        <p>Take a look behind the curtain of our filmmaking process, from pre-production to post-production.</p>
+        <img src="https://via.placeholder.com/1200x600" alt="Behind the Scenes" class="img-fluid">
+    </div>
+</section>
+<!-- Testimonials Section -->
+<section id="testimonials" class="dark-section">
+    <div class="container">
+        <h2 class="section-title text-center">What Industry Legends Say</h2>
+        <div class="testimonial">
+            <p>
+                "Prigat LLC is a powerhouse of storytelling. Their dedication to craft and
+                their ability to push the boundaries of cinema are unmatched. Every project they touch
+                turns into pure magic."
+            </p>
+            <h6>- Famous Director #1</h6>
+        </div>
+        <div class="testimonial">
+            <p>
+                "Working with Prigat LLC has been a dream come true. They don't just make movies;
+                they create experiences that last a lifetime."
+            </p>
+            <h6>- Famous Director #2</h6>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer"><!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prigat LLC - Official Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+        <style>
+            /* Global Styles */
+            body {
+                font-family: 'Arial', sans-serif;
+                background-color: #111;
+                color: #fff;
+                line-height: 1.6;
+            }
+
+            .navbar {
+                background-color: #222;
+            }
+
+            .navbar-brand {
+                font-weight: bold;
+                font-size: 1.5rem;
+            }
+
+            .nav-link {
+                color: #fff !important;
+            }
+
+            .carousel-item img {
+                height: 75vh;
+                object-fit: cover;
+                width: 100%;
+            }
+
+            section {
+                padding: 4rem 2rem;
+            }
+
+            .section-title {
+                margin-bottom: 2rem;
+                font-size: 2rem;
+                font-weight: bold;
+            }
+
+            .dark-section {
+                background-color: #222;
+            }
+
+            .movie-card {
+                background-color: #333;
+                border-radius: 8px;
+                padding: 1rem;
+                text-align: center;
+            }
+
+            .movie-card img {
+                border-radius: 8px;
+                width: 100%;
+                height: auto;
+            }
+
+            .contact .form-control {
+                margin-bottom: 1rem;
+                border: none;
+                background-color: #444;
+                color: #fff;
+            }
+
+            .contact .btn-submit {
+                background-color: #e74c3c;
+                border: none;
+            }
+
+            .footer {
+                padding: 1.5rem;
+                text-align: center;
+                background-color: #222;
+                color: #ccc;
+            }
+        </style>
+    </head>
+
+    <!-- Vision Section -->
+    <section id="vision">
+        <div class="container">
+            <h2 class="section-title text-center">Our Vision</h2>
+            <p>We strive to redefine the world of cinema by creating experiences that inspire, entertain, and ignite the imagination of audiences globally.</p>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards" class="dark-section">
+        <div class="container text-center">
+            <h2 class="section-title">Awards & Recognitions</h2>
+            <p>Prigat LLC has received numerous awards over the years, including international recognition for innovation in storytelling.</p>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <div class="container">
+            <h2 class="section-title text-center">From Our Blog</h2>
+            <p>Explore behind-the-scenes stories, interviews with directors, and more exclusive content from our world.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container text-center">
+            <h3>Contact Us</h3>
+            <form>
+                <input type="text" class="form-control" placeholder="Your Name" required>
+                <input type="email" class="form-control" placeholder="Your Email" required>
+                <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn-submit mt-3">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+<p>&copy; 2024 Prigat LLC. All rights reserved.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

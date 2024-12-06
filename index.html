@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/config.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <title>Thwakz - Our Company</title>
+    <style>
+        body {
+            background-color: var(--home-background-color);
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: var(--home-header-background);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        #nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        #nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        footer {
+            background-color: var(--home-footer-background);
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .carousel {
+            position: relative;
+            height: 80vh; /* Increased height for better first impression */
+            overflow: hidden;
+        }
+        .slide {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            opacity: 0;
+            transition: opacity 1s;
+            background-size: cover;
+            background-position: center;
+        }
+        .slide.active {
+            opacity: 1;
+        }
+        .text-overlay {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            font-size: 28px; /* Increased font size */
+            background: rgba(0, 0, 0, 0.5);
+            padding: 15px;
+        }
+        .section {
+            padding: 40px 20px;
+            margin: 20px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+        .section-text {
+            flex: 1;
+            padding: 20px;
+        }
+        .section-news {
+            flex: 1;
+            padding: 20px;
+        }
+        .section-image {
+            flex: 1;
+            text-align: center;
+        }
+        .section-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .news-link {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: var(--home-header-background);
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            #nav-links {
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 10px;
+            }
+            .carousel {
+                height: 50vh;
+            }
+            .section {
+                flex-direction: column;
+            }
+            .section-image {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 id="header-title">Thwakz</h1>
+    <nav id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="prigat.html">Prigat Productions</a>
+        <a href="ai-department.html">AI Department</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+    </nav>
+</header>
+
+<main>
+    <section class="carousel">
+        <div class="slide active" style="background-image: url('assets/images/image1.jpg');">
+            <div class="text-overlay">Innovating the Future of Technology</div>
+        </div>
+        <div class="slide" style="background-image: url('assets/images/image2.jpg');">
+            <div class="text-overlay">AI Solutions Tailored for Your Business</div>
+        </div>
+        <div class="slide" style="background-image: url('assets/images/image3.jpg');">
+            <div class="text-overlay">Creative Productions That Inspire</div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-text">
+            <h2>Latest Innovations</h2>
+            <p>At Thwakz, we are continually pushing the boundaries of technology to deliver cutting-edge solutions that transform industries. Our latest innovation, an AI-driven analytics platform, helps businesses make data-driven decisions with unprecedented accuracy. By leveraging machine learning and real-time data processing, our platform empowers organizations to unlock insights that were previously unreachable. This technology not only improves operational efficiency but also enhances customer experiences, setting a new standard in the industry.</p>
+        </div>
+        <div class="section-news">
+            <h3>Related News</h3>
+            <a class="news-link" href="#">How AI is Transforming Business Analytics</a>
+            <a class="news-link" href="#">Introducing Our New AI Features</a>
+            <a class="news-link" href="#">Case Study: AI in Action</a>
+        </div>
+        <div class="section-image">
+            <img src="assets/images/innovation.jpg" alt="Latest Innovations">
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-text">
+            <h2>Standout Solutions</h2>
+            <p>Thwakz takes pride in offering standout solutions that cater to diverse business needs. Our flagship offering is the Thwakz Automation Suite, which streamlines workflows and enhances productivity by automating repetitive tasks. This not only saves time but also reduces errors, allowing your team to focus on what truly matters—growing your business. With our custom software development and AI integration, we ensure that our solutions deliver real value.</p>
+        </div>
+        <div class="section-news">
+            <h3>Related News</h3>
+            <a class="news-link" href="#">The Future of Automation</a>
+            <a class="news-link" href="#">Client Success Stories: Automation in Action</a>
+            <a class="news-link" href="#">Upcoming Webinars on Automation Strategies</a>
+        </div>
+        <div class="section-image">
+            <img src="assets/images/solutions.jpg" alt="Standout Solutions">
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-text">
+            <h2>Company Initiatives</h2>
+            <p>As a forward-thinking company, Thwakz engages in several initiatives aimed at fostering innovation and collaboration. Our annual Tech Summit brings together industry experts to discuss emerging trends and share insights. Additionally, we support startups through our incubation program, providing mentorship, resources, and networking opportunities to help them succeed. These initiatives create a vibrant tech ecosystem that nurtures creativity and drives progress.</p>
+        </div>
+        <div class="section-news">
+            <h3>Related News</h3>
+            <a class="news-link" href="#">Join Us at the Annual Tech Summit</a>
+            <a class="news-link" href="#">Our Support for Local Startups</a>
+            <a class="news-link" href="#">Highlights from Last Year's Summit</a>
+        </div>
+        <div class="section-image">
+            <img src="assets/images/initiatives.jpg" alt="Company Initiatives">
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-text">
+            <h2>Research and Development</h2>
+            <p>At Thwakz, research is at the heart of our innovation. Our dedicated R&D team explores the latest advancements in AI, blockchain, and sustainable technology to create solutions that meet current demands and anticipate future needs. We focus on areas that have a meaningful impact in industries ranging from healthcare to finance, ensuring that our clients are equipped with the best tools for success.</p>
+        </div>
+        <div class="section-news">
+            <h3>Related News</h3>
+            <a class="news-link" href="#">Exploring the Future of AI</a>
+            <a class="news-link" href="#">Sustainable Tech: Our Latest Projects</a>
+            <a class="news-link" href="#">Blockchain Applications in Business</a>
+        </div>
+        <div class="section-image">
+            <img src="assets/images/research.jpg" alt="Research and Development">
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-text">
+            <h2>Community Engagement</h2>
+            <p>Thwakz is dedicated to making a positive impact in the community. Our engagement initiatives focus on education, mentorship, and technology accessibility. We partner with local schools and organizations to provide workshops and training sessions that empower individuals with digital skills. Through these efforts, we aim to bridge the technology gap and foster a new generation of innovators. Our commitment to social responsibility is an integral part of our company culture, reflecting our belief that technology should serve everyone.</p>
+        </div>
+        <div class="section-news">
+            <h3>Related News</h3>
+            <a class="news-link" href="#">Our Community Workshops: Join Us!</a>
+            <a class="news-link" href="#">Mentorship Programs: Making a Difference</a>
+            <a class="news-link" href="#">Highlights from Recent Community Events</a>
+        </div>
+        <div class="section-image">
+            <img src="assets/images/community.jpg" alt="Community Engagement">
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Thwakz. All rights reserved.</p>
+</footer>
+
+<script>
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (index + slides.length) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }
+
+    function nextSlide() {
+        showSlide(currentSlide + 1);
+    }
+
+    setInterval(nextSlide, 5000); // Change slide every 5 seconds
+</script>
+</body>
+</html>
